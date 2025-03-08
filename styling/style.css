@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000000; /* Warna teks agar nyaman dibaca */
+  padding-top: 100px;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.img-fluid{
+  border-radius: 50%;
+}
+
+body > div:nth-child(1) > header {
+  position: fixed;  /* Membuat navbar tetap di posisi atas */
+  top: 0;  /* Menempel di atas */
+  left: 0;
+  width: 100%;
+  background: #007bff;
+  z-index: 1000;  /* Pastikan navbar ada di atas elemen lain */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills .nav-link {
+  font-size: 15px; /* Memperbesar teks */
+  padding: 10px 12px; /* Menambah ruang di sekitar teks */
+  color: white;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
+  margin-right: 4px ;
+}
+
+/* Hover efek */
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+  background-color: white;
+  color: #007bff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #f8f9fa;
+}
+
+.p .lead {
+  text-align: justify;
+}
+
+.col-lg-6 p {
+  text-align: justify;
+}
+
+.card-img-top {
+  height: 300px; /* Sesuaikan tinggi agar seragam */
+  object-fit: cover; /* Memastikan gambar tetap proporsional tanpa distorsi */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #007bff; /* Warna gelap */
+  color: #ffffff; /* Warna teks putih */
+  text-align: center;
+}
+
+.footer a {
+  font-size: 24px;
+}
